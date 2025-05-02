@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Guides - PawsomeCompanions</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/pets.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <h1>PawsomeCompanions</h1>
+        <span class="logo-subtitle">Professional Pet Care</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="pets.html" class="active">Pet Guides</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <div class="banner-content">
+      <h1>Comprehensive Pet Guides</h1>
+      <p>Expert information to help you provide the best care for your animal companions</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="content-section fade-in">
+      <div class="filter-container">
+        <h2>Find Your Perfect Pet</h2>
+        <div class="pet-filters">
+          <button class="filter-btn active" data-filter="all">All Pets</button>
+          <button class="filter-btn" data-filter="dogs">Dogs</button>
+          <button class="filter-btn" data-filter="cats">Cats</button>
+          <button class="filter-btn" data-filter="birds">Birds</button>
+          <button class="filter-btn" data-filter="fish">Fish</button>
+          <button class="filter-btn" data-filter="small">Small Pets</button>
+        </div>
+      </div>
+
+      <div class="pet-guides-container">
+        <!-- Dogs -->
+        <div id="dogs" class="pet-guide-item" data-category="dogs">
+          <div class="pet-guide-header">
+            <img src="https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg" alt="Golden Retriever">
+            <h2>Dogs</h2>
+          </div>
+          <div class="pet-guide-content">
+            <div class="overview">
+              <h3>Overview</h3>
+              <p>Dogs are loyal companions known for their devotion and affection. With hundreds of breeds varying in size, temperament, and care requirements, there's a perfect canine companion for nearly every household.</p>
+            </div>
+            
+            <div class="care-requirements">
+              <h3>Care Requirements</h3>
+              <div class="care-item">
+                <h4>Feeding</h4>
+                <p>High-quality dog food appropriate for their age, size, and activity level. Feed adult dogs twice daily according to package guidelines.</p>
+              </div>
+              
+              <div class="care-item">
+                <h4>Exercise</h4>
+                <p>Daily walks and play sessions. Exercise needs vary by breed, with working and sporting breeds requiring more activity.</p>
+              </div>
+              
+              <div class="care-item">
+                <h4>Grooming</h4>
+                <p>Regular brushing, bathing as needed, nail trimming, and dental care. Grooming frequency depends on coat type.</p>
+              </div>
+              
+              <div class="care-item">
+                <h4>Healthcare</h4>
+                <p>Annual veterinary check-ups, vaccinations, parasite prevention, and dental cleanings.</p>
+              </div>
+            </div>
+            
+            <div class="popular-breeds">
+              <h3>Popular Breeds</h3>
+              <ul>
+                <li>Labrador Retriever - Friendly, outgoing, and high-energy</li>
+                <li>German Shepherd - Intelligent, versatile, and protective</li>
+                <li>Golden Retriever - Intelligent, friendly, and devoted</li>
+                <li>French Bulldog - Playful, alert, and adaptable</li>
+                <li>Beagle - Curious, friendly, and merry</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Cats -->
+        <div id="cats" class="pet-guide-item" data-category="cats">
+          <div class="pet-guide-header">
+            <img src="https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg" alt="Orange Tabby Cat">
+            <h2>Cats</h2>
+          </div>
+          <div class="pet-guide-content">
+            <div class="overview">
+              <h3>Overview</h3>
+              <p>Cats are independent yet affectionate companions known for their grace and playful nature. Their self-sufficient character makes them ideal pets for busy households, while still providing companionship and entertainment.</p>
+            </div>
+            
+            <div class="care-requirements">
+              <h3>Care Requirements</h3>
+              <div class="care-item">
+                <h4>Feeding</h4>
+                <p>High-quality cat food (wet, dry, or a combination) appropriate for their age and health status. Feed adult cats twice daily.</p>
+              </div>
+              
+              <div class="care-item">
+                <h4>Exercise</h4>
+                <p>Daily play sessions with interactive toys to stimulate their hunting instincts and provide mental stimulation.</p>
+              </div>
+              
+              <div class="care-item">
+                <h4>Grooming</h4>
+                <p>Regular brushing to reduce shedding and hairballs. Long-haired breeds require more frequent grooming.</p>
+              </div>
+              
+              <div class="care-item">
+                <h4>Healthcare</h4>
+                <p>Annual veterinary check-ups, vaccinations, parasite prevention, and dental care.</p>
+              </div>
+            </div>
+            
+            <div class="popular-breeds">
+              <h3>Popular Breeds</h3>
+              <ul>
+                <li>Maine Coon - Gentle giants with playful personalities</li>
+                <li>Siamese - Vocal, intelligent, and social</li>
+                <li>Ragdoll - Docile, affectionate, and relaxed</li>
+                <li>Bengal - Active, intelligent, and strikingly patterned</li>
+                <li>Persian - Quiet, sweet, and elegant</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Birds -->
+        <div id="birds" class="pet-guide-item" data-category="birds">
+          <div class="pet-guide-header">
+            <img src="https://images.pexels.com/photos/1418241/pexels-photo-1418241.jpeg" alt="Colorful Parakeet">
+            <h2>Birds</h2>
+          </div>
+          <div class="pet-guide-content">
+            <div class="overview">
+              <h3>Overview</h3>
+              <p>Birds add color, song, and intelligence to your home. From small, melodious canaries to clever, talking parrots, birds offer unique companionship and entertainment.</p>
+            </div>
+            
+            <div class="care-requirements">
+              <h3>Care Requirements</h3>
+              <div class="care-item">
+                <h4>Housing</h4>
+                <p>Spacious cage with multiple perches of varying diameters, toys for mental stimulation, and regular out-of-cage time in a bird-safe environment.</p>
+              </div>
+              
+              <div class="care-item">
+                <h4>Feeding</h4>
+                <p>Species-appropriate diet including quality pellets, fresh vegetables and fruits, and occasional seeds or nuts.</p>
+              </div>
+              
+              <div class="care-item">
+                <h4>Social Needs</h4>
+                <p>Daily interaction and mental stimulation. Many species are highly social and need regular attention.</p>
+              </div>
+              
+              <div class="care-item">
+                <h4>Healthcare</h4>
+                <p>Regular check-ups with an avian veterinarian and monitoring for signs of illness, as birds often hide symptoms.</p>
+              </div>
+            </div>
+            
+            <div class="popular-breeds">
+              <h3>Popular Species</h3>
+              <ul>
+                <li>Budgerigars (Parakeets) - Small, colorful, and can learn to talk</li>
+                <li>Cockatiels - Friendly, relatively quiet, and trainable</li>
+                <li>Canaries - Known for beautiful singing, require less handling</li>
+                <li>Lovebirds - Small, colorful, and energetic</li>
+                <li>African Grey Parrots - Highly intelligent with remarkable talking ability</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Fish -->
+        <div id="fish" class="pet-guide-item" data-category="fish">
+          <div class="pet-guide-header">
+            <img src="https://images.pexels.com/photos/128756/pexels-photo-128756.jpeg" alt="Tropical Fish Aquarium">
+            <h2>Fish</h2>
+          </div>
+          <div class="pet-guide-content">
+            <div class="overview">
+              <h3>Overview</h3>
+              <p>Fish are peaceful, low-maintenance pets that create living art in your home. Watching an aquarium has been proven to reduce stress and lower blood pressure, making fish both beautiful and beneficial companions.</p>
+            </div>
+            
+            <div class="care-requirements">
+              <h3>Care Requirements</h3>
+              <div class="care-item">
+                <h4>Aquarium Setup</h4>
+                <p>Appropriately sized tank with proper filtration, heating (for tropical species), lighting, substrate, and decorations that provide hiding places.</p>
+              </div>
+              
+              <div class="care-item">
+                <h4>Water Quality</h4>
+                <p>Regular water testing and partial water changes to maintain appropriate parameters for your fish species.</p>
+              </div>
+              
+              <div class="care-item">
+                <h4>Feeding</h4>
+                <p>Species-appropriate food in proper amounts to prevent overfeeding and water pollution.</p>
+              </div>
+              
+              <div class="care-item">
+                <h4>Stocking</h4>
+                <p>Research compatibility between species and avoid overcrowding the aquarium.</p>
+              </div>
+            </div>
+            
+            <div class="popular-breeds">
+              <h3>Popular Species</h3>
+              <ul>
+                
+                <li>Betta Fish - Colorful, interactive, and can live in smaller tanks</li>
+                <li>Guppies - Bright, active, and easy to care for</li>
+                <li>Tetras - Schooling fish with striking colors</li>
+                <li>Goldfish - Classic pets that can live for decades with proper care</li>
+                <li>Corydoras Catfish - Peaceful bottom dwellers that help clean the tank</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Small Pets -->
+        <div id="small-pets" class="pet-guide-item" data-category="small">
+          <div class="pet-guide-header">
+            <img src="https://images.pexels.com/photos/4520481/pexels-photo-4520481.jpeg" alt="Cute Hamster">
+            <h2>Small Pets</h2>
+          </div>
+          <div class="pet-guide-content">
+            <div class="overview">
+              <h3>Overview</h3>
+              <p>Small pets like hamsters, guinea pigs, and rabbits make wonderful companions, especially for those with limited space. Each species has its own unique personality and care requirements.</p>
+            </div>
+            
+            <div class="care-requirements">
+              <h3>Care Requirements</h3>
+              <div class="care-item">
+                <h4>Housing</h4>
+                <p>Spacious enclosure with appropriate bedding, hiding places, and enrichment items. Cage size requirements vary by species.</p>
+              </div>
+              
+              <div class="care-item">
+                <h4>Feeding</h4>
+                <p>Species-specific diets including commercial food, hay (for guinea pigs and rabbits), and fresh vegetables.</p>
+              </div>
+              
+              <div class="care-item">
+                <h4>Exercise</h4>
+                <p>Regular supervised time outside the cage in a safe, enclosed area.</p>
+              </div>
+              
+              <div class="care-item">
+                <h4>Social Needs</h4>
+                <p>Some species (like guinea pigs) are social and benefit from same-species companions, while others (like hamsters) generally prefer to live alone.</p>
+              </div>
+            </div>
+            
+            <div class="popular-breeds">
+              <h3>Popular Small Pets</h3>
+              <ul>
+                <li>Hamsters - Small, nocturnal, and relatively low-maintenance</li>
+                <li>Guinea Pigs - Social, vocal, and interactive</li>
+                <li>Rabbits - Quiet, clean, and can be litter-trained</li>
+                <li>Gerbils - Active, social, and enjoy burrowing</li>
+                <li>Rats - Intelligent, social, and can learn tricks</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="content-section fade-in">
+      <div class="section-header">
+        <h2>Pet Compatibility Guide</h2>
+        <div class="divider"></div>
+      </div>
+      <p class="section-intro">Finding the right pet for your lifestyle is crucial for a successful relationship with your animal companion.</p>
+      
+      <div class="compatibility-grid">
+        <div class="compatibility-item">
+          <h3>For Families with Children</h3>
+          <div class="compatibility-rating">
+            <span class="highly-compatible">Dogs (medium to large breeds)</span>
+            <span class="compatible">Guinea Pigs, Rabbits</span>
+            <span class="caution">Fish, Birds, Cats (depends on temperament)</span>
+            <span class="not-recommended">Small Hamsters, Exotic Pets</span>
+          </div>
+        </div>
+        
+        <div class="compatibility-item">
+          <h3>For Apartment Living</h3>
+          <div class="compatibility-rating">
+            <span class="highly-compatible">Cats, Small Dogs, Fish</span>
+            <span class="compatible">Small Birds, Hamsters, Gerbils</span>
+            <span class="caution">Medium Dogs, Guinea Pigs, Rabbits</span>
+            <span class="not-recommended">Large Dogs, Loud Birds</span>
+          </div>
+        </div>
+        
+        <div class="compatibility-item">
+          <h3>For Busy Professionals</h3>
+          <div class="compatibility-rating">
+            <span class="highly-compatible">Cats, Fish</span>
+            <span class="compatible">Small rodents, Pairs of birds</span>
+            <span class="caution">Independent dog breeds</span>
+            <span class="not-recommended">Puppies, High-energy dogs, Single social birds</span>
+          </div>
+        </div>
+        
+        <div class="compatibility-item">
+          <h3>For First-Time Pet Owners</h3>
+          <div class="compatibility-rating">
+            <span class="highly-compatible">Cats, Guinea Pigs, Betta Fish</span>
+            <span class="compatible">Calm adult dogs, Hamsters</span>
+            <span class="caution">Puppies, Birds</span>
+            <span class="not-recommended">Exotic Pets, Challenging Dog Breeds</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="newsletter">
+    <div class="newsletter-container">
+      <div class="newsletter-content">
+        <h2>Join Our Pet Lover Community</h2>
+        <p>Subscribe to receive expert pet care tips and updates.</p>
+      </div>
+      <form id="newsletter-form" class="newsletter-form">
+        <input type="email" id="email" placeholder="Your email address" required>
+        <button type="submit" class="btn-primary">Subscribe</button>
+      </form>
+      <div id="newsletter-message"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>PawsomeCompanions</h3>
+        <p>Expert advice for all animal lovers.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="pets.html">Pet Guides</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>123 Pet Avenue, Animal City</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: info@pawsomecompanions.com</p>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; 2024 PawsomeCompanions. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/animations.js"></script>
+  <script src="../js/pets.js"></script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PawsomeCompanions - Professional Pet Care</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <h1>PawsomeCompanions</h1>
+        <span class="logo-subtitle">Professional Pet Care</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="pages/pets.html">Pet Guides</a></li>
+          <li><a href="pages/blog.html">Blog</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Your Pet's Health & Happiness is Our Priority</h1>
+      <p>Expert advice for your beloved companions</p>
+      <a href="pages/pets.html" class="btn-primary">Explore Pet Guides</a>
+    </div>
+  </section>
+
+  <main>
+    <section id="welcome" class="content-section fade-in">
+      <div class="section-header">
+        <h2>Welcome to PawsomeCompanions</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="two-column">
+        <div class="column">
+          <p>At PawsomeCompanions, we're dedicated to providing you with expert advice for your furry, feathered, or scaly friends. Our team of passionate pet lovers and certified professionals is committed to enhancing the bond between you and your companions.</p>
+          <p>Whether you're a first-time pet owner or an experienced animal enthusiast, we offer personalized guidance to ensure your pet lives their best life.</p>
+          <a href="pages/about.html" class="btn-secondary">Learn More About Us</a>
+        </div>
+        <div class="column">
+          <div class="image-container">
+            <img src="https://images.pexels.com/photos/1904105/pexels-photo-1904105.jpeg" alt="Happy dog with owner" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="popular-pets" class="content-section fade-in">
+      <div class="section-header">
+        <h2>Find Your Perfect Companion</h2>
+        <div class="divider"></div>
+      </div>
+      <p class="section-intro">Every pet brings unique joy and companionship. Explore our guides to find the perfect match for your lifestyle.</p>
+      
+      <div class="pet-cards">
+        <div class="pet-card" data-pet="dogs">
+          <div class="pet-card-image">
+            <img src="https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg" alt="Adorable dog">
+          </div>
+          <div class="pet-card-content">
+            <h3>Dogs</h3>
+            <p>Loyal companions that bring endless joy and affection to your home.</p>
+            <a href="pages/pets.html#dogs" class="card-link">Dog Care Guide</a>
+          </div>
+        </div>
+        
+        <div class="pet-card" data-pet="cats">
+          <div class="pet-card-image">
+            <img src="https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg" alt="Elegant cat">
+          </div>
+          <div class="pet-card-content">
+            <h3>Cats</h3>
+            <p>Independent and charming felines that bring comfort and personality.</p>
+            <a href="pages/pets.html#cats" class="card-link">Cat Care Guide</a>
+          </div>
+        </div>
+        
+        <div class="pet-card" data-pet="birds">
+          <div class="pet-card-image">
+            <img src="https://images.pexels.com/photos/1418241/pexels-photo-1418241.jpeg" alt="Colorful bird">
+          </div>
+          <div class="pet-card-content">
+            <h3>Birds</h3>
+            <p>Colorful and intelligent companions that bring music to your home.</p>
+            <a href="pages/pets.html#birds" class="card-link">Bird Care Guide</a>
+          </div>
+        </div>
+        
+        <div class="pet-card" data-pet="fish">
+          <div class="pet-card-image">
+            <img src="https://images.pexels.com/photos/128756/pexels-photo-128756.jpeg" alt="Tropical fish">
+          </div>
+          <div class="pet-card-content">
+            <h3>Fish</h3>
+            <p>Calming aquatic friends that create a peaceful atmosphere in any space.</p>
+            <a href="pages/pets.html#fish" class="card-link">Fish Care Guide</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="center-content">
+        <a href="pages/pets.html" class="btn-primary">View All Pet Guides</a>
+      </div>
+    </section>
+
+    <section id="quiz" class="content-section fade-in">
+      <div class="section-header">
+        <h2>Test Your Pet Knowledge</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="quiz-container">
+        <div class="quiz-card">
+          <h3>Pet Quiz</h3>
+          <div id="quiz-question" class="quiz-question">
+            <p id="question-text">What's the most popular pet in the world?</p>
+            <div class="quiz-options">
+              <button class="quiz-option" data-answer="Dogs">Dogs</button>
+              <button class="quiz-option" data-answer="Cats">Cats</button>
+              <button class="quiz-option" data-answer="Fish">Fish</button>
+            </div>
+          </div>
+          <div id="quiz-result" class="quiz-result"></div>
+          <button id="next-question" class="btn-secondary" style="display: none;">Next Question</button>
+        </div>
+        <div class="quiz-info">
+          <h3>Why Take Our Quiz?</h3>
+          <p>Test your knowledge about pet care, breeds, and behaviors. Learning more about our animal companions helps us become better pet parents!</p>
+          <p>Complete the quiz to receive personalized pet care recommendations.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="content-section fade-in">
+      <div class="section-header">
+        <h2>What Pet Parents Say</h2>
+        <div class="divider"></div>
+      </div>
+      
+      <div class="testimonials-container">
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <p>"The care guidelines from PawsomeCompanions transformed my relationship with my rescue dog. Their professional advice was invaluable!"</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg" alt="Sarah J." class="author-image">
+            <div class="author-details">
+              <h4>Sarah J.</h4>
+              <p>Dog Owner</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial">
+          <div class="testimonial-content">
+            <p>"As a first-time cat owner, I was worried about providing proper care. The detailed guides and personalized advice made all the difference."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" alt="Michael T." class="author-image">
+            <div class="author-details">
+              <h4>Michael T.</h4>
+              <p>Cat Owner</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="newsletter">
+    <div class="newsletter-container">
+      <div class="newsletter-content">
+        <h2>Join Our Pet Lover Community</h2>
+        <p>Subscribe to receive expert pet care tips and updates.</p>
+      </div>
+      <form id="newsletter-form" class="newsletter-form">
+        <input type="email" id="email" placeholder="Your email address" required>
+        <button type="submit" class="btn-primary">Subscribe</button>
+      </form>
+      <div id="newsletter-message"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>PawsomeCompanions</h3>
+        <p>Expert advice for all animal lovers.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/pets.html">Pet Guides</a></li>
+          <li><a href="pages/blog.html">Blog</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>123 Pet Avenue, Animal City</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: info@pawsomecompanions.com</p>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; 2024 PawsomeCompanions. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/animations.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
