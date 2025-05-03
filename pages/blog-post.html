@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Post - PawsomeCompanions</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/blog.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <h1>PawsomeCompanions</h1>
+        <span class="logo-subtitle">Professional Pet Care</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="pets.html">Pet Guides</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="content-section fade-in">
+      <div id="blog-post" class="about-section">
+        <!-- Content will be populated by JavaScript -->
+      </div>
+    </section>
+  </main>
+
+  <section class="newsletter">
+    <div class="newsletter-container">
+      <div class="newsletter-content">
+        <h2>Join Our Pet Lover Community</h2>
+        <p>Subscribe to receive expert pet care tips and updates.</p>
+      </div>
+      <form id="newsletter-form" class="newsletter-form">
+        <input type="email" id="email" placeholder="Your email address" required>
+        <button type="submit" class="btn-primary">Subscribe</button>
+      </form>
+      <div id="newsletter-message"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>PawsomeCompanions</h3>
+        <p>Expert advice for all animal lovers.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="pets.html">Pet Guides</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>123 Pet Avenue, Animal City</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: info@pawsomecompanions.com</p>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; 2024 PawsomeCompanions. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/animations.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get article data from sessionStorage
+      const articleData = JSON.parse(sessionStorage.getItem('currentArticle'));
+      
+      if (articleData) {
+        // Create blog post content
+        const blogPost = document.getElementById('blog-post');
+        blogPost.innerHTML = `
+          <div class="blog-image" style="height: 400px; margin-bottom: var(--spacing-lg);">
+            <img src="${articleData.image}" alt="${articleData.title}" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div class="blog-meta" style="margin-bottom: var(--spacing-md);">
+            <span>${articleData.date}</span>
+            <span>${articleData.author}</span>
+          </div>
+          <h1 style="margin-bottom: var(--spacing-lg);">${articleData.title}</h1>
+          <div class="blog-tags" style="margin-bottom: var(--spacing-lg);">
+            ${articleData.tags.map(tag => `<span class="blog-tag">${tag}</span>`).join('')}
+          </div>
+          <div class="blog-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          </div>
+        `;
+      } else {
+        window.location.href = 'blog.html';
+      }
+    });
+  </script>
+</body>
+</html>

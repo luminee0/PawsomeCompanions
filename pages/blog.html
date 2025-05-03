@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - PawsomeCompanions</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/blog.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <h1>PawsomeCompanions</h1>
+        <span class="logo-subtitle">Professional Pet Care</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="pets.html">Pet Guides</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <div class="banner-content">
+      <h1>Pet Care Blog</h1>
+      <p>Expert tips, advice, and stories about pet care and companionship</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="content-section fade-in">
+      <div class="categories">
+        <button class="category-btn active">All</button>
+        <button class="category-btn">Dog Care</button>
+        <button class="category-btn">Cat Care</button>
+        <button class="category-btn">Bird Care</button>
+        <button class="category-btn">Fish Care</button>
+        <button class="category-btn">Small Pets</button>
+        <button class="category-btn">Pet Health</button>
+        <button class="category-btn">Training Tips</button>
+      </div>
+
+      <div class="featured-post">
+        <div class="featured-image">
+          <img src="https://images.pexels.com/photos/1904105/pexels-photo-1904105.jpeg" alt="Dog with owner">
+        </div>
+        <div class="featured-content">
+          <div class="blog-meta">
+            <span>March 15, 2024</span>
+            <span>By Dr. Sarah Johnson</span>
+          </div>
+          <h2>Essential Tips for First-Time Pet Parents</h2>
+          <p>Bringing a new pet home is an exciting adventure. Learn the essential steps to prepare your home and lifestyle for your new furry friend. From choosing the right supplies to establishing routines, this guide covers everything you need to know.</p>
+          <div class="blog-tags">
+            <span class="blog-tag">Pet Care</span>
+            <span class="blog-tag">New Pet</span>
+            <span class="blog-tag">Tips</span>
+          </div>
+          <a href="#" class="btn-primary">Read More</a>
+        </div>
+      </div>
+
+      <div class="blog-grid">
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg" alt="Cat grooming">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>March 12, 2024</span>
+              <span>By Emma Wilson</span>
+            </div>
+            <h3>The Complete Guide to Cat Grooming</h3>
+            <p>Learn the essential techniques for keeping your feline friend clean and healthy with our comprehensive grooming guide.</p>
+            <div class="blog-tags">
+              <span class="blog-tag">Cats</span>
+              <span class="blog-tag">Grooming</span>
+            </div>
+            <a href="#" class="btn-secondary">Read More</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg" alt="Dog training">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>March 10, 2024</span>
+              <span>By Mike Thompson</span>
+            </div>
+            <h3>Basic Dog Training Tips for Beginners</h3>
+            <p>Start your dog training journey with these proven techniques that will help establish good behavior and strengthen your bond.</p>
+            <div class="blog-tags">
+              <span class="blog-tag">Dogs</span>
+              <span class="blog-tag">Training</span>
+            </div>
+            <a href="#" class="btn-secondary">Read More</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-image">
+            <img src="https://images.pexels.com/photos/128756/pexels-photo-128756.jpeg" alt="Aquarium setup">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>March 8, 2024</span>
+              <span>By Lisa Chen</span>
+            </div>
+            <h3>Setting Up Your First Aquarium</h3>
+            <p>A step-by-step guide to creating the perfect underwater environment for your aquatic pets.</p>
+            <div class="blog-tags">
+              <span class="blog-tag">Fish</span>
+              <span class="blog-tag">Aquarium</span>
+            </div>
+            <a href="#" class="btn-secondary">Read More</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <section class="newsletter">
+    <div class="newsletter-container">
+      <div class="newsletter-content">
+        <h2>Join Our Pet Lover Community</h2>
+        <p>Subscribe to receive expert pet care tips and updates.</p>
+      </div>
+      <form id="newsletter-form" class="newsletter-form">
+        <input type="email" id="email" placeholder="Your email address" required>
+        <button type="submit" class="btn-primary">Subscribe</button>
+      </form>
+      <div id="newsletter-message"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>PawsomeCompanions</h3>
+        <p>Expert advice for all animal lovers.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="pets.html">Pet Guides</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>123 Pet Avenue, Animal City</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: info@pawsomecompanions.com</p>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; 2024 PawsomeCompanions. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/animations.js"></script>
+  <script src="../js/blog.js"></script>
+</body>
+</html>
